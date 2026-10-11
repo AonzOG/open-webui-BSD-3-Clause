@@ -1,0 +1,47 @@
+name: Import pinned Open WebUI BSD-3-Clause snapshot
+
+on:
+  push:
+    branches:
+      - import-open-webui-bsd3-3e7bce
+    paths:
+      - .github/workflows/import-pinned-open-webui.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-open-webui-bsd3-3e7bce
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out candidate branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Import exact upstream Git tree, preserving license and file modes
+        shell: bash
+        env:
+          SOURCE_COMMIT: 3e7bce092129c5a9c98f268b3af0fca6971a40d3
+          SOURCE_TREE: 7b966b947ca7dab6dc547e4d19196b11007e424d
+          TARGET_BRANCH: import-open-webui-bsd3-3e7bce
+        run: |
+          set -Eeuo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add upstream https://github.com/open-webui/open-webui.git
+          git fetch --no-tags --depth=1 upstream "$SOURCE_COMMIT"
+          test "$(git rev-parse FETCH_HEAD)" = "$SOURCE_COMMIT"
+          test "$(git rev-parse 'FETCH_HEAD^{tree}')" = "$SOURCE_TREE"
+          git read-tree "$SOURCE_TREE"
+          git diff --cached --quiet && { echo 'Unexpected empty staged import'; exit 1; }
+          git commit -m "Import exact Open WebUI BSD-3-Clause snapshot $SOURCE_COMMIT"
+          test "$(git rev-parse 'HEAD^{tree}')" = "$SOURCE_TREE"
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          echo "Imported and verified source tree $SOURCE_TREE"
