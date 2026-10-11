@@ -1,4 +1,4 @@
-# AonzOG Open WebUI — BSD 3-Clause Historical Snapshot
+# AonzOG Open WebUI — BSD 3-Clause Historical Snapshot 11-10-2026
 
 This repository contains an imported historical snapshot of **Open WebUI**, preserved from a specific upstream revision released under the **BSD 3-Clause License**.
 
