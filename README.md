@@ -1,3 +1,104 @@
+# AonzOG Open WebUI — BSD 3-Clause Historical Snapshot
+
+This repository contains an imported historical snapshot of **Open WebUI**, preserved from a specific upstream revision released under the **BSD 3-Clause License**.
+
+The purpose of this repository is to retain an independently maintained copy of the Open WebUI codebase as it existed at the selected revision, allowing subsequent development, modification, integration, redistribution, and commercial use in accordance with the applicable licence conditions.
+
+## 1. Original Repository and Source Revision
+
+| Information | Details |
+|---|---|
+| Original project | Open WebUI |
+| Original repository | https://github.com/open-webui/open-webui |
+| Upstream default branch | `main` |
+| Source reference type | Historical commit-pinned snapshot (not a separately named branch) |
+| Source branch/snapshot link | https://github.com/open-webui/open-webui/tree/3e7bce092129c5a9c98f268b3af0fca6971a40d3 |
+| Original commit ID / SHA-1 | `3e7bce092129c5a9c98f268b3af0fca6971a40d3` |
+| Original commit date | 18 April 2025, 19:32:17 UTC |
+| **Number of upstream commits through this revision** | **10,105 (inclusive)** |
+| Git tree SHA-1 | `7b966b947ca7dab6dc547e4d19196b11007e424d` |
+| Licence at selected revision | BSD 3-Clause License (`BSD-3-Clause`) |
+
+**Commit count clarification:** The **10,105** upstream commits represent the Git history reachable from the selected source commit, including that commit and its ancestors (including merged history). The count was verified using the GitHub commits API for the exact revision: page 10,105 contains the repository's initial commit and page 10,106 is empty when using `per_page=1`. This is **not** the number of commits in the destination repository.
+
+The source snapshot URL resolves to a historical commit on the original repository's history rather than a separately named branch. This pin identifies the original revision even as the upstream project's `main` branch continues to change.
+
+## 2. Imported Repository Details
+
+| Information | Details |
+|---|---|
+| Repository name | `open-webui-BSD-3-Clause` |
+| Repository owner | `AonzOG` |
+| Repository URL | https://github.com/AonzOG/open-webui-BSD-3-Clause |
+| Destination branch | `main` |
+| Destination branch URL | https://github.com/AonzOG/open-webui-BSD-3-Clause/tree/main |
+| Completed source import commit | `b40aece76125b3de584b473d703cb281767b2a9a` |
+| Completed import commit URL | https://github.com/AonzOG/open-webui-BSD-3-Clause/commit/b40aece76125b3de584b473d703cb281767b2a9a |
+| Import date | 11 October 2026 |
+| Original licence preserved | BSD 3-Clause License |
+| Source tree integrity | Verified — exact Git tree SHA match |
+
+The source files were imported directly into the destination repository, which has **independent Git history**. The destination's `main` branch contained **6 commits** immediately after completion of the import. The original upstream history of **10,105 commits** was not reproduced in the destination's Git history; the historical source revision is documented and its complete tracked file tree was imported.
+
+## 3. Source Integrity and Version Identification
+
+The imported source tree was verified against the original Open WebUI revision.
+
+**Original upstream commit SHA-1:**
+
+`3e7bce092129c5a9c98f268b3af0fca6971a40d3`
+
+**Original upstream Git tree SHA-1:**
+
+`7b966b947ca7dab6dc547e4d19196b11007e424d`
+
+**Imported repository Git tree SHA-1 (at completed import):**
+
+`7b966b947ca7dab6dc547e4d19196b11007e424d`
+
+The identical Git tree hashes establish that the tracked file contents, paths, and Git file modes matched the original upstream snapshot at the completed import commit.
+
+This verification describes **the original imported source revision**. Later changes — including replacement of this README — will produce a different destination tree hash without altering the recorded identity of the historical import.
+
+## 4. Licensing and Attribution
+
+The selected Open WebUI revision contains the **BSD 3-Clause License**, whose original licence and copyright notice have been preserved in this repository.
+
+**Original project:** Open WebUI
+
+**Original copyright notice:** Copyright (c) 2023-2025 Timothy Jaeryang Baek
+
+**Original licence:** BSD 3-Clause License (`BSD-3-Clause`)
+
+**Original licence file:**
+
+https://github.com/open-webui/open-webui/blob/3e7bce092129c5a9c98f268b3af0fca6971a40d3/LICENSE
+
+The BSD 3-Clause License permits use, modification, redistribution, and commercial exploitation in source and binary forms, subject to its conditions. Redistributions of source must retain the required copyright notice, conditions, and disclaimer; binary redistributions must reproduce those notices in associated materials. The names of the copyright holder and contributors may not be used to endorse or promote derivatives without prior written permission. Separately licensed third-party components remain subject to their own licence terms.
+
+The repository owner's independently written additions may carry their own applicable notices, but importing or modifying the upstream project does not transfer authorship of its pre-existing code or remove the original attribution obligations.
+
+## 5. Repository Maintenance and Development
+
+This repository establishes the specified historical BSD 3-Clause-licensed Open WebUI revision as its initial imported codebase. Future development, bug fixes, security improvements, feature additions, integrations, and rebranding may be undertaken independently by the repository owner, subject to applicable licences.
+
+The repository is **not automatically synchronized** with current upstream Open WebUI releases. Later upstream code or licensing changes do not automatically change the legal terms of the particular historical source files imported here.
+
+**Installation and workflow note:** The original Open WebUI README below is reproduced without changes. References in that historical README to `pip install open-webui`, `ghcr.io/open-webui/open-webui`, upstream documentation, sponsorship, support, and releases refer to the original upstream project; they do not establish that independently maintained builds or packages have been published from this repository. The imported upstream GitHub Actions workflows should be reviewed before use because release and publication workflows can run automatically.
+
+For the immutable record of the initial import, refer to:
+
+- **Original source snapshot:** https://github.com/open-webui/open-webui/tree/3e7bce092129c5a9c98f268b3af0fca6971a40d3
+- **Original source commit:** https://github.com/open-webui/open-webui/commit/3e7bce092129c5a9c98f268b3af0fca6971a40d3
+- **Original source licence:** https://github.com/open-webui/open-webui/blob/3e7bce092129c5a9c98f268b3af0fca6971a40d3/LICENSE
+- **Completed destination import:** https://github.com/AonzOG/open-webui-BSD-3-Clause/commit/b40aece76125b3de584b473d703cb281767b2a9a
+
+---
+
+**Original Open WebUI README follows below, retained without modification.**
+
+
+
 # Open WebUI 👋
 
 ![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social)
